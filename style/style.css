@@ -1281,7 +1281,8 @@ button {
 
 .burger {
     display: none;
-    margin-left: auto; 
+    margin-left: auto;
+     
 }
 
 .burger-checkbox {
@@ -1291,22 +1292,24 @@ button {
 .burger-btn {
     font-size: 3.5rem;
     line-height: 0;
-    color: var(--black-h);
+    color: #333;
     cursor: pointer;
     user-select: none;
-    transition: color var(--transition);
+    transition: color 0.3s ease;
+    
+    
 }
 
 .burger-btn:hover {
-    color: var(--button-color);
+    color: #e67e22;
 }
 
 .burger-menu {
     position: absolute;
-    top: 8rem;
-    right: 4.8rem;
+    top: 5rem;
+    right: 60%;
     width: 25rem;
-    background: var(--white);
+    background: #fff;
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
     border-radius: 1rem;
     padding: 1.5rem;
@@ -1321,22 +1324,22 @@ button {
 
 .burger-link {
     font-size: 1.8rem;
-    color: var(--black-h);
+    color: #333;
     text-decoration: none;
     padding: 1rem;
     border-bottom: 1px solid #eee;
-    transition: color var(--transition);
+    transition: color 0.3s ease;
 }
 
 .burger-link:hover {
-    color: var(--button-color);
+    color:  #e67e22;
 }
 
 .burger-button {
     width: 100%;
     padding: 1.2rem;
-    background-color: var(--button-color);
-    color: var(--white);
+    background-color: #e67e22;
+    color: #fff;
     border: none;
     border-radius: 0.9rem;
     font-size: 1.8rem;
@@ -1346,7 +1349,7 @@ button {
 }
 
 .burger-button:hover {
-    background-color: var(--primary-dark);
+    background-color: #CF711F;
 }
 @media (max-width: 768px) {
     .page-header {
