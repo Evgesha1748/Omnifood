@@ -9,18 +9,18 @@
       content="default-src 'self'; 
                script-src 'self' https://cdn.tailwindcss.com https://unpkg.com;">
 
-    <!-- Предзагрузка критических ресурсов -->
+
     <link rel="preload" href="https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nBrXw.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="img/omnifood-logo.webp" as="image">
     <link rel="preload" href="img/hero.webp" as="image">
     
-    <!-- Preconnect для шрифтов -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Критический CSS для первого экрана (минимизирует CLS) -->
+   
     <style>
-        /* Базовые стили для первого экрана (адаптированы под новые классы) */
+      
         * {
             margin: 0;
             padding: 0;
@@ -88,11 +88,16 @@
         }
     </style>
     
-    <!-- Полный CSS файл (новые имена классов) -->
+   
     <link rel="stylesheet" href="style/style.css">
     <script src="js/script.js"></script>
     
     <title>Omnifood - Здоровая еда каждый день</title>
+
+    <meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
     <meta name="description" content="Умная подписка на еду 365 дней в году, которая заставит вас снова питаться здорово. Подстраивается под ваши вкусы и потребности в питании.">
 </head>
 <body>
@@ -105,6 +110,17 @@
             <a href="#price" class="nav-link">Цены</a>
             <button class="btn-primary">Попробовать</button>
         </div>
+        <div class="burger">
+        <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+        <label for="burger-toggle" class="burger-btn">☰</label>
+        <div class="burger-menu">
+            <a href="#" class="burger-link">Как это работает</a>
+            <a href="#" class="burger-link">Рецепты</a>
+            <a href="#" class="burger-link">Отзывы</a>
+            <a href="#" class="burger-link">Цены</a>
+            <button class="burger-button">Попробовать</button>
+        </div>
+    </div>
     </header>
     
     <main>
